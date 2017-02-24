@@ -35,8 +35,15 @@ public class A3Q2 {
        new Wall(kw, 1, 2, Direction.EAST);
        new Wall(kw, 2, 2, Direction.EAST);
        
-       
-       
+       while(true){
+           carl.move();
+           carl.move();
+           carl.turnLeft();
+           carl.move();
+           
+           
+       }
+     
        
     }
     
