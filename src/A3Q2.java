@@ -2,6 +2,7 @@
 import becker.robots.City;
 import becker.robots.Direction;
 import becker.robots.Robot;
+import becker.robots.RobotSE;
 import becker.robots.Wall;
 
 /*
@@ -23,7 +24,7 @@ public class A3Q2 {
         City kw = new City();
         
         //create a robot
-       Robot carl = new Robot(kw, 0, 2, Direction.WEST);
+       RobotSE carl = new RobotSE(kw, 0, 2, Direction.WEST);
        
        //create a square wall
        new Wall(kw, 1, 2, Direction.NORTH);
@@ -35,13 +36,11 @@ public class A3Q2 {
        new Wall(kw, 1, 2, Direction.EAST);
        new Wall(kw, 2, 2, Direction.EAST);
        
-       while(true){
+      for(int i=0; i<8; i = i + 1){
            carl.move();
            carl.move();
            carl.turnLeft();
            carl.move();
-           
-           
        }
      
        

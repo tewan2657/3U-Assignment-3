@@ -2,6 +2,7 @@
 import becker.robots.City;
 import becker.robots.Direction;
 import becker.robots.Robot;
+import becker.robots.RobotSE;
 import becker.robots.Thing;
 import becker.robots.Wall;
 
@@ -23,7 +24,7 @@ public class A3Q3 {
         City kw = new City();
 
         //create a robot 
-        Robot carl = new Robot(kw, 1, 1, Direction.EAST);
+        RobotSE carl = new RobotSE(kw, 1, 1, Direction.EAST);
 
         //create a room 
         new Wall(kw, 1, 1, Direction.NORTH);
@@ -48,16 +49,26 @@ public class A3Q3 {
         new Thing(kw, 2, 4);
         new Thing(kw, 3, 1);
         new Thing(kw, 3, 4);
-        
-        
-       
-        
-        
-        
-        
-        
-        
-        
+
+
+
+        for (int i = 0; i < 12; i = i + 1) {
+            if (carl.canPickThing()) {
+                carl.pickThing();
+            }
+            carl.move();
+            carl.turnLeft();
+            carl.turnRight();
+
+            if (carl.frontIsClear() == false) {
+                carl.turnRight();
+            }
+
+
+
+
+
+
+        }
     }
 }
-
