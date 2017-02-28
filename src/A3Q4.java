@@ -45,17 +45,17 @@ public class A3Q4 {
 
         // make counter 
         for (int i = 0; i < 8; i = i + 1) {
+          
             carl.move();
             carl.turnLeft();
             carl.turnRight();
-            
-            if(carl.frontIsClear()==false){
+
+            if (carl.frontIsClear() == false) {
                 carl.turnRight();
-             
-               
-                    
-                }
+
+
+
             }
         }
-    
+    }
 }
