@@ -49,14 +49,14 @@ public class A3Q6 {
         new Thing(kw, 4, 1);
         new Thing(kw, 4, 1);
 
-        while(true){
-          carl.move();
+       
 
         for (int i = 0; i < 15; i = i + 1) {
+            carl.move();
             if (carl.canPickThing() == true) {
-              carl.pickThing();
-              carl.pickThing();
-                carl.turnLeft();
+             carl.pickAllThings();
+             carl.putThing();
+             carl.turnLeft();
                
                 
                if(carl.countThingsInBackpack()>1){
@@ -64,7 +64,11 @@ public class A3Q6 {
                    carl.putThing();
                    carl.move();
                    carl.putThing();
-                   carl.turnAround();
+                    
+                   
+                   if(carl.countThingsInBackpack()==0){
+                       carl.turnAround();
+                   }
            
                }
             }
@@ -77,4 +81,4 @@ public class A3Q6 {
         }
     }
 }
-}
+

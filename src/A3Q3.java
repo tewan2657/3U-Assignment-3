@@ -52,23 +52,36 @@ public class A3Q3 {
 
 
 
-        for (int i = 0; i < 12; i = i + 1) {
+        for (int i = 0; i < 10; i = i + 1) {
             if (carl.canPickThing()) {
                 carl.pickThing();
             }
             carl.move();
-            carl.turnLeft();
-            carl.turnRight();
+            
 
             if (carl.frontIsClear() == false) {
                 carl.turnRight();
             }
+            }
+            
+            for (int i = 0; i < 6; i = i + 1) {
+            if (carl.canPickThing()) {
+                carl.pickThing();
+            }
+            carl.move();
+           
 
+            if (carl.frontIsClear() == false) {
+                carl.turnRight();
+                carl.move();
+                carl.turnRight();
 
 
 
 
 
         }
+    }
+
     }
 }
