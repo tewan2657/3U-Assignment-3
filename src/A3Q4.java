@@ -22,7 +22,7 @@ public class A3Q4 {
         City kw = new City();
 
         //create a robot
-        RobotSE carl = new RobotSE(kw, 4, 1, Direction.NORTH);
+        RobotSE carl = new RobotSE(kw, 4, 2, Direction.NORTH);
 
         //create a closed room with one exit 
         new Wall(kw, 1, 1, Direction.WEST);
@@ -44,23 +44,57 @@ public class A3Q4 {
 
 
         // make counter 
-        for (int i = 0; i < 10; i = i + 1) {
-          
+
+
+        while (carl.frontIsClear()) {
             carl.move();
-            
 
-            if (carl.frontIsClear() == false) {
+//            
+
+        }
+
+
+
+        while (!(carl.frontIsClear())) {
+
+            if (carl.frontIsClear() == false && carl.getDirection() == Direction.NORTH) {
                 carl.turnRight();
+                if (carl.frontIsClear() == false && carl.getDirection() == Direction.EAST) {
+                    carl.turnRight();
+                }
 
-
-        
-               
-            
+                carl.move();
+                carl.turnLeft();
 
             }
+
+            if (carl.frontIsClear() == false && carl.getDirection() == Direction.EAST) {
+                carl.turnRight();
+                carl.move();
+                carl.turnLeft();
+
+            }
+            if (carl.frontIsClear() == false && carl.getDirection() == Direction.SOUTH) {
+                carl.turnRight();
+                carl.move();
+                carl.turnLeft();
+
+            }
+
+            if (carl.frontIsClear() == false && carl.getDirection() == Direction.WEST) {
+                carl.turnRight();
+                carl.move();
+                carl.turnLeft();
+
+            }
+
+
+
+
+
+
+
+
         }
     }
 }
-
-
-

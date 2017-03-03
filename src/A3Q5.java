@@ -38,16 +38,19 @@ public class A3Q5 {
         new Thing(kw, 5, 1);
         new Thing(kw, 5, 1);
         new Thing(kw, 5, 1);
+        
+        //create a algorithm for the robot to transfer the things
+    
 
         for (int i = 0; i <10; i = i + 1) {
-           carl.pickThing();
+            if(carl.canPickThing()==true);
+            carl.pickThing();
+        }
            carl.move();
            carl.putThing();
            carl.move();
            carl.turnAround();
-           carl.move();
-           carl.move();
-        }
+           
 
 
 
