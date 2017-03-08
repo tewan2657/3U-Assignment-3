@@ -36,6 +36,7 @@ public class A3Q2 {
        new Wall(kw, 1, 2, Direction.EAST);
        new Wall(kw, 2, 2, Direction.EAST);
        
+       // create a loop for carl to move around the square twice 
       for(int i=0; i<8; i = i + 1){
            carl.move();
            carl.move();

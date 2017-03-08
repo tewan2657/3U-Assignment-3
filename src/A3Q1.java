@@ -31,7 +31,7 @@ public class A3Q1 {
 
         // make a counter 
         int counter = 0;
-        //move 5 times using a condition
+        //move 2 times using a condition
         while (counter < 2) {
             //move
             carl.move();

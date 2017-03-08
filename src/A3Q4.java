@@ -43,31 +43,33 @@ public class A3Q4 {
 
 
 
-        // make counter 
+        // loop
 
 
         while (carl.frontIsClear()) {
             carl.move();
 
-//            
+
+           
 
         }
 
 
-
+         // make a loop until the front is clear 
         while (!(carl.frontIsClear())) {
+
 
             if (carl.frontIsClear() == false && carl.getDirection() == Direction.NORTH) {
                 carl.turnRight();
                 if (carl.frontIsClear() == false && carl.getDirection() == Direction.EAST) {
                     carl.turnRight();
                 }
-
+                // check the wall for any exits 
                 carl.move();
                 carl.turnLeft();
 
             }
-
+             // what carl should do if these starements are true 
             if (carl.frontIsClear() == false && carl.getDirection() == Direction.EAST) {
                 carl.turnRight();
                 carl.move();
@@ -86,15 +88,11 @@ public class A3Q4 {
                 carl.move();
                 carl.turnLeft();
 
-            }
-
-
-
-
-
-
-
+            } 
 
         }
-    }
+        // escape the room after carl finds the exit 
+        carl.move();
+    }       
 }
+            

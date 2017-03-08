@@ -49,36 +49,75 @@ public class A3Q6 {
         new Thing(kw, 4, 1);
         new Thing(kw, 4, 1);
 
-       
 
-        for (int i = 0; i < 15; i = i + 1) {
-            carl.move();
-            if (carl.canPickThing() == true) {
-             carl.pickAllThings();
-             carl.putThing();
-             carl.turnLeft();
-               
-                
-               if(carl.countThingsInBackpack()>1){
-                   carl.move();
-                   carl.putThing();
-                   carl.move();
-                   carl.putThing();
-                    
-                   
-                   if(carl.countThingsInBackpack()==0){
-                       carl.turnAround();
-                   }
-           
-               }
-            }
-            
+        // move 3 things
+        carl.move();
+        carl.pickAllThings();
+        carl.putThing();
+        carl.turnLeft();
+        carl.move();
+        carl.putThing();
+        carl.move();
+        carl.putThing();
+        carl.turnAround();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+
+        // move 2 things 
+        carl.pickAllThings();
+        carl.putThing();
+        carl.turnLeft();
+        carl.move();
+        carl.putThing();
+        carl.turnAround();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+
+        // move 5 things
+        carl.pickAllThings();
+        carl.putThing();
+        carl.turnLeft();
+        carl.move();
+        carl.putThing();
+        carl.move();
+        carl.putThing();
+        carl.move();
+        carl.putThing();
+        carl.move();
+        carl.putThing();
+        carl.turnAround();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+
+
+        // move 4 things 
+        carl.pickAllThings();
+        carl.putThing();
+        carl.turnLeft();
+        carl.move();
+        carl.putThing();
+        carl.move();
+        carl.putThing();
+        carl.move();
+        carl.putThing();
+        carl.turnAround();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
 
 
 
 
 
-        }
+
     }
 }
-

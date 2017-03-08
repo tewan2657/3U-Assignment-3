@@ -43,16 +43,22 @@ public class A3Q5 {
     
 
         for (int i = 0; i <10; i = i + 1) {
-            if(carl.canPickThing()==true);
+            if(carl.getDirection() == Direction.EAST){
             carl.pickThing();
+            carl.move();
+            carl.putThing();
+            carl.turnAround();
+        
         }
-           carl.move();
-           carl.putThing();
-           carl.move();
-           carl.turnAround();
-           
+        carl.move();
+        carl.turnAround();
+        
 
 
-
+        }
+    
+        carl.move();
+        
     }
+    
 }

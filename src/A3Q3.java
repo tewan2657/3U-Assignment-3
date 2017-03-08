@@ -51,11 +51,12 @@ public class A3Q3 {
         new Thing(kw, 3, 4);
 
 
-
+   // first loop picks up everything on the side of the room 
         for (int i = 0; i < 10; i = i + 1) {
             if (carl.canPickThing()) {
                 carl.pickThing();
             }
+            //move
             carl.move();
             
 
@@ -63,11 +64,12 @@ public class A3Q3 {
                 carl.turnRight();
             }
             }
-            
+            // carl picks up things from the middle of the room 
             for (int i = 0; i < 6; i = i + 1) {
             if (carl.canPickThing()) {
                 carl.pickThing();
             }
+            //move
             carl.move();
            
 
