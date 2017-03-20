@@ -66,5 +66,79 @@ public class A3Q7 {
  
         
         
+       //first block -- Red path
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        
+        
+        //second block - orange path 
+        
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        
+        //Third Block - Pink path 
+        
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+     
+        
+        //Fourth block - yellow path 
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        carl.turnLeft();
+        carl.move();
+        carl.move();
+        carl.move();
+        
+        
+        
     }
 }

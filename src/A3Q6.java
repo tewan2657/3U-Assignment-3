@@ -49,75 +49,33 @@ public class A3Q6 {
         new Thing(kw, 4, 1);
         new Thing(kw, 4, 1);
 
+        // follow commands until Avenue & Street match 
+        while (carl.getAvenue() == 1 && carl.getStreet() < 5) {
+            carl.move();
+            carl.pickAllThings();
+            carl.turnLeft();
 
-        // move 3 things
-        carl.move();
-        carl.pickAllThings();
-        carl.putThing();
-        carl.turnLeft();
-        carl.move();
-        carl.putThing();
-        carl.move();
-        carl.putThing();
-        carl.turnAround();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
+            // do when carl has something in his backpack 
+            while (carl.countThingsInBackpack() > 0) {
 
-        // move 2 things 
-        carl.pickAllThings();
-        carl.putThing();
-        carl.turnLeft();
-        carl.move();
-        carl.putThing();
-        carl.turnAround();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
+                carl.putThing();
+                carl.move();
+            }
 
-        // move 5 things
-        carl.pickAllThings();
-        carl.putThing();
-        carl.turnLeft();
-        carl.move();
-        carl.putThing();
-        carl.move();
-        carl.putThing();
-        carl.move();
-        carl.putThing();
-        carl.move();
-        carl.putThing();
-        carl.turnAround();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
+            //turn around 
+            carl.turnAround();
+            
+           // move until carl gets to Avenue 1 
+            while (carl.getAvenue() != 1) {
+                carl.move();
 
 
-        // move 4 things 
-        carl.pickAllThings();
-        carl.putThing();
-        carl.turnLeft();
-        carl.move();
-        carl.putThing();
-        carl.move();
-        carl.putThing();
-        carl.move();
-        carl.putThing();
-        carl.turnAround();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
+            }
 
 
-
-
-
+            // turn left 
+            carl.turnLeft();
+        }
 
     }
 }
