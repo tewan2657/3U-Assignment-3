@@ -66,79 +66,48 @@ public class A3Q7 {
  
         
         
-       //first block -- Red path
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        
-        
-        //second block - orange path 
-        
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        
-        //Third Block - Pink path 
-        
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-     
-        
-        //Fourth block - yellow path 
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        carl.turnLeft();
-        carl.move();
-        carl.move();
-        carl.move();
-        
-        
-        
+      //Make a variable
+        int mov = 0;
+        // execute command 4 times 
+        while(mov<4){
+            
+        for(int i = 0; i < 4; i++ ){
+            //if i<3 then execute commands below
+            if(i<3){
+            carl.move();
+            carl.move();
+            carl.move();
+            carl.turnLeft();
+            }
+            // if i>3 then execute commads below 
+            else{
+                carl.move();
+                carl.move();
+                carl.move();
+                
+                
+            }   
+                
+                
+            }
+        mov++;
+        }    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
     }
-}
+
